@@ -1,0 +1,359 @@
+[index.html.html](https://github.com/user-attachments/files/35234041/index.html.html)
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UFT-8">
+        <title>アクティブイングリッシュ小テストchapter5</title>
+    </head>
+    <body>
+        <h1>アクティブイングリッシュ小テストchapter5\</h1>
+        <!--一文目(1)-->
+       <p>Trees are a <label>(1)<input type="text" id="miracle"></label> of nature.</p>    
+        <p id="output1"></p>
+        <button onclick="getInputValue1()">一問目答え合わせ</button>
+        <!--二文目(2)-->
+        <p>They help people, animals and birds, and also protect the <label>(2)<input type="text" id="enviroment"></label> . </p>    
+        <p id="output2"></p>
+        <button onclick="getInputValue2()">二問目答え合わせ</button>
+        <!--三文目(3)-->
+        <p>Since ancient times, people have <label>(3)<input type="text" id="respected"></label> trees. </p>    
+        <p id="output3"></p>
+        <button onclick="getInputValue3()">三問目答え合わせ</button>
+        <!--5文目(4),(5)-->
+        <p>Trees are also <label>(4)<input type="text" id="symbols"></label> of immorality, wisdom, <label>(5)<input type="text" id="knowledge"></label> </p> and friendship.   
+        <p id="output4"></p>
+        <button onclick="getInputValue4()">四問目答え合わせ</button>
+        <p id="output5"></p>
+        <button onclick="getInputValue5()">五問目答え合わせ</button>
+       <!--六文目(6),(7)-->
+        <p>Julius Sterling Morton, an important 19th century American <label>(6)<input type="text" id="journalist"></label> ,believed that trees <label>(7)<input type="text" id="protect"></label> enviroment for futer <label>(8)<input type="text" id="generations"></label>.</p>    
+        <p id="output6"></p>
+        <button onclick="getInputValue6()">六問目答え合わせ</button>
+        <p id="output7"></p>
+        <button onclick="getInputValue7()">七問目答え合わせ</button>
+        <p id="output8"></p>
+        <button onclick="getInputValue8()">八問目答え合わせ</button>
+        <!--三文目(3)-->
+        <p>Thanks to Morton's efforts, Americans now plant trees on Arbor Day.</p>
+        <!--七文目(8)-->
+        <p>Many countries including India,Yugoslavia,Korea and Japan <label>(9)<input type="text" id="have"></label> their own version ob Arbor Day. </p>    
+        <p id="output9"></p>
+        <button onclick="getInputValue9()">九問目答え合わせ</button>
+        <!--八文目(9),(10)-->
+        <p>Perhaps Israel is the most remarkable <label>(10)<input type="text" id="success">story.</label> </p>    
+        <p id="output10"></p>
+        <button onclick="getInputValue10()">十問目答え合わせ</button>
+        <!--三文目(3)-->
+        <p>Since 1901, more than 240 million trees have been planted.</p>
+        
+        <script>
+
+         // alert("javascript") 
+          //一問目ボタン他 
+        function getInputValue1(){
+
+            //document.addEventListener("keydown",(event)=>{
+                //if(event.key=="Enter"){
+
+                    try {
+                        const inputElement = document.getElementById("miracle");
+                        // 入力値を取得
+                        const value = inputElement.value;
+
+                        
+                        // 入力チェック（空文字の場合）
+                        if (value.trim() == "") {
+                            document.getElementById("output1").textContent = "入力が空です。";
+                            return;
+                        } else if(value.trim()=="miracle"){
+                            //正解の場合の表示
+                            document.getElementById("output1").textContent = `〇正解！`;
+                        }else{
+                            document.getElementById("output1").textContent = `正解: miracle`;
+                            alert("残念！もう一度");
+                        }       
+                    }               
+                    catch (error) {
+                        console.error("値取得中にエラーが発生しました:", error);
+                    }
+                //}
+
+        
+            //})
+        } 
+        //一問目Enter
+        document.getElementById("miracle").addEventListener("keydown", (event) => {
+            if (event.key == "Enter") {
+    //e.preventDefault();   // フォーム送信を防ぐ（必要なら）
+                getInputValue1();             // ← ここで関数を呼ぶ
+            }
+        });
+        
+        //二問目ボタン他 
+        function getInputValue2(){
+            try {
+        const inputElement = document.getElementById("enviroment");
+        // 入力値を取得
+        const value = inputElement.value;
+        // 入力チェック（空文字の場合）
+        if (value.trim() == "") {
+            document.getElementById("output2").textContent = "入力が空です。";
+            return;
+        }
+        // 値を表示
+       else if(value.trim()=="enviroment"){
+            document.getElementById("output2").textContent = `〇正解！`;
+        }else{
+            document.getElementById("output2").textContent = `正解: enviroment`;
+            alert("残念！もう一度");
+        }
+    }catch (error) {
+        console.error("値取得中にエラーが発生しました:", error);
+    }
+}
+        //二問目Enter
+        document.getElementById("enviroment").addEventListener("keydown", (event) => {
+            if (event.key == "Enter") {
+    //e.preventDefault();   // フォーム送信を防ぐ（必要なら）
+                getInputValue2();             // ← ここで関数を呼ぶ
+            }
+        });
+
+        //三問目ボタン他 
+        function getInputValue3(){
+            try {
+        const inputElement = document.getElementById("respected");
+        // 入力値を取得
+        const value = inputElement.value;
+        // 入力チェック（空文字の場合）
+        if (value.trim() == "") {
+            document.getElementById("output3").textContent = "入力が空です。";
+            return;
+        }
+        // 値を表示
+       else if(value.trim()=="respected"){
+            document.getElementById("output3").textContent = `〇正解！`;
+        }else{
+            document.getElementById("output3").textContent = `正解: respected`;
+            alert("残念！もう一度");
+        }
+    }catch (error) {
+        console.error("値取得中にエラーが発生しました:", error);
+    }
+}
+//三問目Enter
+        document.getElementById("respected").addEventListener("keydown", (event) => {
+            if (event.key == "Enter") {
+    //e.preventDefault();   // フォーム送信を防ぐ（必要なら）
+                getInputValue3();             // ← ここで関数を呼ぶ
+            }
+        });
+
+        //四問目ボタン他
+        function getInputValue4(){
+            try {
+        const inputElement = document.getElementById("symbols");
+        // 入力値を取得
+        const value = inputElement.value;
+        // 入力チェック（空文字の場合）
+        if (value.trim() == "") {
+            document.getElementById("output4").textContent = "入力が空です。";
+            return;
+        }
+        // 値を表示
+       else if(value.trim()=="symbols"){
+            document.getElementById("output4").textContent = `〇正解！`;
+        }else{
+            document.getElementById("output4").textContent = `正解: symbols`;
+            alert("残念！もう一度");
+        }
+    }catch (error) {
+        console.error("値取得中にエラーが発生しました:", error);
+    }
+}
+        //四問目Enter
+        document.getElementById("symbols").addEventListener("keydown", (event) => {
+            if (event.key == "Enter") {
+    //e.preventDefault();   // フォーム送信を防ぐ（必要なら）
+                getInputValue4();             // ← ここで関数を呼ぶ
+            }
+        });
+
+        //五問目ボタン他
+        function getInputValue5(){
+            try {
+        const inputElement = document.getElementById("knowledge");
+        // 入力値を取得
+        const value = inputElement.value;
+        // 入力チェック（空文字の場合）
+        if (value.trim() == "") {
+            document.getElementById("output5").textContent = "入力が空です。";
+            return;
+        }
+        // 値を表示
+       else if(value.trim()=="knowledge"){
+            document.getElementById("output5").textContent = `〇正解！`;
+        }else{
+            document.getElementById("output5").textContent = `正解: knowledge`;
+            alert("残念！もう一度");
+        }
+    }catch (error) {
+        console.error("値取得中にエラーが発生しました:", error);
+    }
+}
+        //五問目Enter
+        document.getElementById("knowledge").addEventListener("keydown", (event) => {
+            if (event.key == "Enter") {
+                getInputValue5();             // ← ここで関数を呼ぶ
+            }
+        });        
+
+        //六問目ボタンJs
+        function getInputValue6(){
+            try {
+        const inputElement = document.getElementById("journalist");
+        // 入力値を取得
+        const value = inputElement.value;
+        // 入力チェック（空文字の場合）
+        if (value.trim() == "") {
+            document.getElementById("output6").textContent = "入力が空です。";
+            return;
+        }
+        // 値を表示
+       else if(value.trim()=="journalist"){
+            document.getElementById("output6").textContent = `〇正解！`;
+        }else{
+            document.getElementById("output6").textContent = `正解: journalist`;
+            alert("残念！もう一度");
+        }
+    }catch (error) {
+        console.error("値取得中にエラーが発生しました:", error);
+    }
+}
+        //六問目Enter
+        document.getElementById("journalist").addEventListener("keydown", (event) => {
+            if (event.key == "Enter") {
+                getInputValue6();             // ← ここで関数を呼ぶ
+            }
+        });                      
+
+        //七問目ボタン
+        function getInputValue7(){
+            try {
+        const inputElement = document.getElementById("protect");
+        // 入力値を取得
+        const value = inputElement.value;
+        // 入力チェック（空文字の場合）
+        if (value.trim() == "") {
+            document.getElementById("output7").textContent = "入力が空です。";
+            return;
+        }
+        // 値を表示
+       else if(value.trim()=="protect"){
+            document.getElementById("output7").textContent = `〇正解！`;
+        }else{
+            document.getElementById("output7").textContent = `正解: protect`;
+            alert("残念！もう一度");
+        }
+    }catch (error) {
+        console.error("値取得中にエラーが発生しました:", error);
+    }
+}
+       //七問目Enter
+        document.getElementById("protect").addEventListener("keydown", (event) => {
+            if (event.key == "Enter") {
+                getInputValue7();             // ← ここで関数を呼ぶ
+            }
+        });                
+
+        //八問目ボタン
+        function getInputValue8(){
+            try {
+        const inputElement = document.getElementById("generations");
+        // 入力値を取得
+        const value = inputElement.value;
+        // 入力チェック（空文字の場合）
+        if (value.trim() == "") {
+            document.getElementById("output8").textContent = "入力が空です。";
+            return;
+        }
+        // 値を表示
+       else if(value.trim()=="generations"){
+            document.getElementById("output8").textContent = `〇正解！`;
+        }else{
+            document.getElementById("output8").textContent = `正解: generations`;
+            alert("残念！もう一度");
+        }
+    }catch (error) {
+        console.error("値取得中にエラーが発生しました:", error);
+    }
+}
+       //八問目Enter
+        document.getElementById("generations").addEventListener("keydown", (event) => {
+            if (event.key == "Enter") {
+                getInputValue8();             // ← ここで関数を呼ぶ
+            }
+        });        
+        
+        //九問目ボタン
+        function getInputValue9(){
+            try {
+        const inputElement = document.getElementById("have");
+        // 入力値を取得
+        const value = inputElement.value;
+        // 入力チェック（空文字の場合）
+        if (value.trim() == "") {
+            document.getElementById("output9").textContent = "入力が空です。";
+            return;
+        }
+        // 値を表示
+       else if(value.trim()=="have"){
+            document.getElementById("output9").textContent = `〇正解！`;
+        }else{
+            document.getElementById("output9").textContent = `正解: have`;
+            alert("残念！もう一度");
+        }
+    }catch (error) {
+        console.error("値取得中にエラーが発生しました:", error);
+    }
+}
+       //九問目Enter
+        document.getElementById("have").addEventListener("keydown", (event) => {
+            if (event.key == "Enter") {
+                getInputValue9();             // ← ここで関数を呼ぶ
+            }
+        });        
+        
+        //十問目
+        function getInputValue10(){
+            try {
+        const inputElement = document.getElementById("success");
+        // 入力値を取得
+        const value = inputElement.value;
+        // 入力チェック（空文字の場合）
+        if (value.trim() == "") {
+            document.getElementById("output10").textContent = "入力が空です。";
+            return;
+        }
+        // 値を表示
+       else if(value.trim()=="success"){
+            document.getElementById("output10").textContent = `〇正解！`;
+        }else{
+            document.getElementById("output10").textContent = `正解: success`;
+            alert("残念！もう一度");
+        }
+    }catch (error) {
+        console.error("値取得中にエラーが発生しました:", error);
+    }
+}
+       //十問目Enter
+        document.getElementById("success").addEventListener("keydown", (event) => {
+            if (event.key == "Enter") {
+                getInputValue10();             // ← ここで関数を呼ぶ
+            }
+        });        
+
+
+        </script>
+    </body>
+</html>
