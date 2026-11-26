@@ -11,7 +11,7 @@
         <p id="output1"></p>
         <button onclick="getInputValue1()">一問目答え合わせ</button>
         <!--二文目(2)-->
-        <p>They help people, animals and birds, and also protect the <label>(2)<input type="text" id="enviroment"></label> . </p>    
+        <p>They help people, animals and birds, and also protect the <label>(2)<input type="text" id="environment"></label> . </p>    
         <p id="output2"></p>
         <button onclick="getInputValue2()">二問目答え合わせ</button>
         <!--三文目(3)-->
@@ -91,7 +91,7 @@
         //二問目ボタン他 
         function getInputValue2(){
             try {
-        const inputElement = document.getElementById("enviroment");
+        const inputElement = document.getElementById("environment");
         // 入力値を取得
         const value = inputElement.value;
         // 入力チェック（空文字の場合）
@@ -100,10 +100,10 @@
             return;
         }
         // 値を表示
-       else if(value.trim()=="enviroment"){
+       else if(value.trim()=="environment"){
             document.getElementById("output2").textContent = `〇正解！`;
         }else{
-            document.getElementById("output2").textContent = `正解: enviroment`;
+            document.getElementById("output2").textContent = `正解: environment`;
             alert("残念！もう一度");
         }
     }catch (error) {
@@ -111,7 +111,7 @@
     }
 }
         //二問目Enter
-        document.getElementById("enviroment").addEventListener("keydown", (event) => {
+        document.getElementById("environment").addEventListener("keydown", (event) => {
             if (event.key == "Enter") {
     //e.preventDefault();   // フォーム送信を防ぐ（必要なら）
                 getInputValue2();             // ← ここで関数を呼ぶ
